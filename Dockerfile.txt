@@ -1,0 +1,5 @@
+FROM openjdk:latest
+COPY PrimeNumbers.java /usr/src/app/
+WORKDIR /usr/src/app/
+RUN javac PrimeNumbers.java
+CMD ["java", "PrimeNumbers"]
